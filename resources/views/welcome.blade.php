@@ -10,6 +10,17 @@
             </div>
         </div>
     </div>
+    <div class="row g-4">
+        <div class="col">
+            @foreach ($books as $book)
+                <div class="bookCard">
+                    <h2>{{$book->name}}</h2>
+                    <h3>Autore: {{$book->author}}</h3>
+                    <p>Casa editrice: {{$book->publisher}}</p>
+                </div>
+            @endforeach
+        </div>
+    </div>
 
 </div>
 @endsection
